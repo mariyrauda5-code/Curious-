@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine Question 💘</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffd6e8, #fff1f7);
+      font-family: "Comic Sans MS", "Poppins", sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #ff4d88;
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #444;
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 25px 0;
+    }
+
+    .images img {
+      width: 120px;
+      border-radius: 20px;
+    }
+
+    button {
+      font-size: 1.1em;
+      padding: 12px 22px;
+      margin: 10px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .yes {
+      background-color: #ff4d88;
+      color: white;
+    }
+
+    .no {
+      background-color: #bbb;
+      color: #333;
+    }
+
+    #result {
+      margin-top: 25px;
+      font-size: 1.4em;
+      color: #ff3366;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Will I be your Valentine? 💘</h1>
+  <p>Choose wisely…</p>
+
+  <div class="images">
+    <!-- Cute cartoon / kid-style illustrations -->
+    <img src="https://i.imgur.com/7QfXKZp.png" alt="cute cartoon couple">
+    <img src="https://i.imgur.com/W5ZcR6y.png" alt="cute hearts">
+    <img src="https://i.imgur.com/MaJ7ZzY.png" alt="cute teddy bear">
+  </div>
+
+  <h1>Will I be your Valentine 💖  
+    <br>or see me never 💔?</h1>
+
+  <button class="yes" onclick="yesAnswer()">Yes, be my Valentine 💘</button>
+  <button class="no" onclick="noAnswer()">See me never 💔</button>
+
+  <div id="result"></div>
+
+  <script>
+    function yesAnswer() {
+      document.getElementById("result").innerHTML =
+        "Yay!! 💕💞 You just made my heart very happy 😘";
+    }
+
+    function noAnswer() {
+      document.getElementById("result").innerHTML =
+        "Ouch 💔… that hurt. But at least you were honest 😌";
+    }
+  </script>
+
+</body>
+</html>
